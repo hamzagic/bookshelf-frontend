@@ -29,11 +29,14 @@ const Calendar = () => {
                   color: '#fff',           
                 },
                   '& .Mui-selected.Mui-focusVisible': {
-                  backgroundColor: '#e214d5',  // Apply the same background color when focused
+                  backgroundColor: '#e214d5',
                 },
                   '& .MuiPickersDay-root:focus.Mui-selected': {
-                  backgroundColor: '#e214d5',  // Keep the color consistent when the day is focused
+                  backgroundColor: '#e214d5',
                 },
+                width: '576px',
+                maxWidth: '576px',
+                height: '290px'
               }}
             />
           </DemoItem>
