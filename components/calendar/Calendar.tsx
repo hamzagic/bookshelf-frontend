@@ -12,27 +12,34 @@ import styles from './Calendar.module.css';
 const Calendar = () => {
   const [value, setValue] = useState<Dayjs | null>(dayjs('2022-04-17'));
   return(
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={['DateCalendar', 'DateCalendar']}>
-        {/* <DemoItem label="Uncontrolled calendar">
-          <DateCalendar defaultValue={dayjs('2022-04-17')} />
-        </DemoItem> */}
-        <DemoItem label="">
-          <DateCalendar 
-            value={value} 
-            onChange={(newValue: Dayjs | null) => setValue(newValue)} 
-            className={styles.selectedDate}
-            sx={{
-                "& .MuiPickersDay-root": {
-                  "&.Mui-selected": {
-                    backgroundColor: '#e214d5',
-                  },
+    <div className={styles.container}>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DemoContainer components={['DateCalendar', 'DateCalendar']}>
+          {/* <DemoItem label="Uncontrolled calendar">
+            <DateCalendar defaultValue={dayjs('2022-04-17')} />
+          </DemoItem> */}
+          <DemoItem label="">
+            <DateCalendar 
+              value={value} 
+              onChange={(newValue: Dayjs | null) => setValue(newValue)} 
+              className={styles.selectedDate}
+              sx={{
+                '& .Mui-selected': {
+                  backgroundColor: '#e214d5',  
+                  color: '#fff',           
                 },
-            }}
-          />
-        </DemoItem>
-      </DemoContainer>
-    </LocalizationProvider>
+                  '& .Mui-selected.Mui-focusVisible': {
+                  backgroundColor: '#e214d5',  // Apply the same background color when focused
+                },
+                  '& .MuiPickersDay-root:focus.Mui-selected': {
+                  backgroundColor: '#e214d5',  // Keep the color consistent when the day is focused
+                },
+              }}
+            />
+          </DemoItem>
+        </DemoContainer>
+      </LocalizationProvider>
+    </div>
   );
 }
 
