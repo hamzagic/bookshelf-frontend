@@ -5,6 +5,7 @@ import ProfileIcon from '../profile-icon/ProfileIcon';
 import styles from './Header.module.css';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Tooltip from '@mui/material/Tooltip';
 
 const Header = ({ pageName }: { pageName: string }) => {
@@ -21,11 +22,14 @@ const Header = ({ pageName }: { pageName: string }) => {
       <div className={styles.pageName}>{pageName}</div>
       <div className={styles.buttons}>
         <Button text='New Booking' onclick={() => {}} />
+        <Tooltip title='My Books'>
+          <AutoStoriesIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.icons} />
+        </Tooltip>
         <Tooltip title='Analytics'>
-          <AnalyticsIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.analytics} />
+          <AnalyticsIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.icons} />
         </Tooltip>
         <Tooltip title='Settings'>
-          <SettingsIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.settings} />
+          <SettingsIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.icons} />
         </Tooltip>
         <ProfileIcon />
       </div>

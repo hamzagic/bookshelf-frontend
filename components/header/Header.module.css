@@ -15,14 +15,7 @@
   align-items: center;
   column-gap: 40px;
 }
-.settings {
-  cursor: pointer;
-  &:hover {
-    opacity: .7;
-  }
-}
-
-.analytics {
+.icons {
   cursor: pointer;
   &:hover {
     opacity: .7;
