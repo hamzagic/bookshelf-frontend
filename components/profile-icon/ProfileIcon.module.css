@@ -1,0 +1,8 @@
+.iconContainer {
+  position: relative;
+}
+
+.icon:hover {
+  opacity: .7;
+  cursor: pointer;
+}
