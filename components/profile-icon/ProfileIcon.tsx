@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import styles from './ProfileIcon.module.css';
 import Avatar from '@mui/material/Avatar';
 import PersonIcon from '@mui/icons-material/Person';

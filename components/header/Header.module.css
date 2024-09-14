@@ -15,3 +15,16 @@
   align-items: center;
   column-gap: 40px;
 }
+.settings {
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.analytics {
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
+}
