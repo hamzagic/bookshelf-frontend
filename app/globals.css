@@ -4,6 +4,7 @@
   --btn-main: #e214d5;
   --btn-main-hovered: #db62d3;
   --white: #ffffff;
+  --background-secondary: #f2cef0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
     color-scheme: dark;
   }
