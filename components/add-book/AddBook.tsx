@@ -1,10 +1,8 @@
-import Header from '../header/Header';
 import styles from './AddBook.module.css';
 
 const AddBook = () => {
   return(
     <>
-    <Header pageName='New Book' />
     <div className={styles.container}>
       <form className={styles.form}>
         <h3 className={styles.title}>Add New Book</h3>

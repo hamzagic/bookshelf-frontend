@@ -8,7 +8,7 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Tooltip from '@mui/material/Tooltip';
 
-const Header = ({ pageName }: { pageName: string }) => {
+const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
@@ -18,8 +18,9 @@ const Header = ({ pageName }: { pageName: string }) => {
           alt='' 
           className={styles.logo} 
         />
+        <div>BookShelf</div>
       </div>
-      <div className={styles.pageName}>{pageName}</div>
+      {/* <div className={styles.pageName}>{pageName}</div> */}
       <div className={styles.buttons}>
         <Button text='Add New Book' onclick={() => {}} />
         <Tooltip title='My Books'>

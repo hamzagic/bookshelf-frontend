@@ -1,8 +1,13 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  padding: 10px 16px;
+  justify-content: space-between;
+  padding: 10px 6%;
   max-height: 50px;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 .pageName {
   font-size: 36px;

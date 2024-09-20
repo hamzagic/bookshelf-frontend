@@ -1,9 +1,7 @@
 'use client';
 import Avatar from '@mui/material/Avatar';
-import Header from '@/components/header/Header';
 import styles from './page.module.css';
 import Button from '@/components/button/Button';
-import Stack from '@mui/material/Stack';
 
 const Profile: React.FC<{
     name: string;
@@ -12,7 +10,6 @@ const Profile: React.FC<{
 }> = ({ name, email, monthlyReadingGoal }) => {
     return (
         <>
-          <Header pageName='Profile' />
           <div className={styles.container}>
               <div className={styles.itemContainer}>
                 <div className={styles.imgContainer}>
