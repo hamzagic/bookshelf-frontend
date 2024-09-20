@@ -12,3 +12,8 @@
     background-color: var(--btn-main-hovered);
   }
 }
+
+.disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}

@@ -1,4 +1,5 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import styles from './ProfileIcon.module.css';
 import Avatar from '@mui/material/Avatar';
 import PersonIcon from '@mui/icons-material/Person';
@@ -7,6 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const ProfileIcon = () => {
+  const router = useRouter();
+
   return (
     <PopupState variant="popover" popupId="demo-popup-menu">
       {(popupState) => (
@@ -17,8 +20,14 @@ const ProfileIcon = () => {
             </Avatar>
           </div>
           <Menu {...bindMenu(popupState)}>
-            <MenuItem onClick={popupState.close}>Profile</MenuItem>
-            <MenuItem onClick={popupState.close}>Logout</MenuItem>
+            <MenuItem onClick={() => {
+              router.push('/profile');
+              popupState.close();
+              }}>Profile</MenuItem>
+            <MenuItem onClick={() => {
+              router.push('/');
+              popupState.close();
+            }}>Logout</MenuItem>
           </Menu>
         </div>
       )}

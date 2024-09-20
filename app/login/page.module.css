@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  width: 30vw;
+  height: 80vh;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.input {
+  height: 30px;
+  padding: 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}

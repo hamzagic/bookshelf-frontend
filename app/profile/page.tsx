@@ -13,7 +13,7 @@ const Profile: React.FC<{
           <div className={styles.container}>
               <div className={styles.itemContainer}>
                 <div className={styles.imgContainer}>
-                  <Avatar alt='profile' src='/public/images/logo-cropped.png' className={styles.img} />
+                  <Avatar alt='profile' src='/images/avatar.png' className={styles.img} />
                   <Button text='Upload new image' onclick={() => {}}/>
                 </div>
                   <div className={styles.item}>
