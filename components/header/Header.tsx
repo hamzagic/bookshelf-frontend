@@ -21,7 +21,7 @@ const Header = ({ pageName }: { pageName: string }) => {
       </div>
       <div className={styles.pageName}>{pageName}</div>
       <div className={styles.buttons}>
-        <Button text='New Booking' onclick={() => {}} />
+        <Button text='Add New Book' onclick={() => {}} />
         <Tooltip title='My Books'>
           <AutoStoriesIcon fontSize='large' sx={{color: '#e214d5'}} className={styles.icons} />
         </Tooltip>

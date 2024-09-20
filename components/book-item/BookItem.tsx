@@ -3,7 +3,6 @@ import styles from './BookItem.module.css';
 
 // todo: add reading percentage, add options to delete book or edit book data
 const BookItem = ({ book }: { book: { title: string; author: string; pages: number } }) => {
-  console.log('kalslfa', book);
   return (
     <div className={styles.container}>
       <Image src="/images/book-placeholder.png" width={50} height={50} alt="Book cover" />
