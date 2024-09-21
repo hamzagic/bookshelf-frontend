@@ -14,6 +14,7 @@ import { useUser } from '../store/appContext';
 const Header = () => {
   const router = useRouter();
   const user = useUser();
+  console.log('fsfad', user);
 
   const newBookHandler = () => {
     router.push('/addbook');
@@ -35,7 +36,7 @@ const Header = () => {
         />
         <div>BookShelf</div>
       </div>
-      {user.isLoggedIn && 
+      {user?.user?.isLoggedIn && 
       <div className={styles.buttons}>
           <Button text='Add New Book' onclick={newBookHandler} />
           <Tooltip title='My Books'>
