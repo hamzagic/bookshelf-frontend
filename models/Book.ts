@@ -9,6 +9,9 @@ const BookSchema = new Schema({
         type: String,
         required: [true, 'Author is required']
     },
+    description: {
+        type: String
+    },
     image: {
         type: String,
     },
