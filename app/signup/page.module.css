@@ -3,44 +3,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .h1 {
+    height: 90vh;
+}
+
+.h1 {
     text-align: center;
     margin-bottom: 8px;
     margin-top: -24px;
-  }
-  
-  .form {
+}
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 10px;
     width: 30vw;
-    height: 80vh;
+    height: 60vh;
     background-color: var(--background-secondary);
     padding: 0 16px;
     border-radius: 16px;
-  }
-  
-  .btnContainer {
+}
+
+.btnContainer {
     margin-top: 20px;
-  }
-  
-  .item {
+}
+
+.item {
     display: flex;
     flex-direction: column;
     row-gap: 4px;
-  }
-  
-  .input {
+}
+
+.input {
     height: 34px;
     padding: 0 16px;
     border: 1px solid #ddd;
     border-radius: 16px;
-  }
-  
-  .message {
+}
+
+.message {
     color: red;
     font-style: italic;
-  }
+}
