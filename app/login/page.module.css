@@ -1,47 +1,47 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .h1 {
-    text-align: center;
-    margin-bottom: 8px;
-    margin-top: -24px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: -24px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 10px;
-    width: 30vw;
-    height: 60vh;
-    background-color: var(--background-secondary);
-    padding: 0 16px;
-    border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  width: 30vw;
+  height: 60vh;
+  background-color: var(--background-secondary);
+  padding: 0 16px;
+  border-radius: 16px;
 }
 
 .btnContainer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
 }
 
 .input {
-    height: 34px;
-    padding: 0 16px;
-    border: 1px solid #ddd;
-    border-radius: 16px;
+  height: 34px;
+  padding: 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
 }
 
 .message {
-    color: red;
-    font-style: italic;
+  color: red;
+  font-style: italic;
 }
